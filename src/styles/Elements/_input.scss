@@ -1,0 +1,43 @@
+.input{
+    width: 90%;
+    padding: 10px;
+    height: 2.5rem;
+    border-radius: 3px;
+    &:focus{
+        outline: thick double $green-color;
+    }
+}
+
+.input-w--smaller{
+    width: 80%;
+}
+
+.input-textarea{
+    resize: none;
+    width: 90%;
+    padding: 10px;
+    height: 30%;
+    border-radius: 3px;
+    &:focus{
+        outline: thick double $green-color;
+    }
+}
+
+.input-textarea--smaller{
+    resize: none;
+    width: 80%;
+    height: 30%;
+    padding: 10px;
+    border-radius: 3px;
+    &:focus{
+        outline: thick double $green-color;
+    }
+}
+
+.input-label{
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

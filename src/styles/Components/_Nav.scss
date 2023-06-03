@@ -1,0 +1,33 @@
+.nav-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    height: 10vh;
+    border-bottom: 2px solid rgba($color: white, $alpha: 1);
+
+    .nav-title{
+        width: 50%;
+        display: flex;
+        align-self: center;
+        font-size: 1.5rem;
+
+        h1{
+            margin: 0px;
+            cursor: pointer;
+        }
+    }
+
+    .nav-ul{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+

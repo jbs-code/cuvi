@@ -1,0 +1,16 @@
+.card{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba($color: #000000, $alpha: 0.3);
+    padding: 20px;
+    text-align: justify;
+    width: 960px;
+    line-height: 1.3rem;
+
+    .card-title{
+        font-weight: bold;
+    }
+
+    img{
+        width: 100%;
+    }
+}

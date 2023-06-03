@@ -1,0 +1,59 @@
+.home{
+    width: 100%;
+    min-height: 90vh;
+}
+.home-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.home-start{
+    width: 50%;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+
+
+    h1{
+        text-align: center;
+        margin: 0px;
+        text-shadow: 3px 3px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .link{
+        width: 40%;
+    }
+}
+
+.home-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 80vh;
+
+    img{
+        width: 100%;
+    }
+}
+
+.home-footer{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+
+    a{
+        color: white;
+        transition: color 0.3s ease;
+        &:hover{
+            color: $green-color;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.link{
+    text-decoration: none;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+.link-btn{
+    background-color: transparentize($color: #000000, $amount: 1);
+}
+
+.link-green{
+    color: white;
+    border: 1px solid $green-color;
+    border-radius: 3px;
+
+    &:hover{
+        color: lighten($color: $green-color, $amount: 15);
+        border: none;
+        background-color: transparentize($color: $purple-color, $amount: 0.4);
+    }
+}
+
+.link-disabled{
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    pointer-events: none;
+}

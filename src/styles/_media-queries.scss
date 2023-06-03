@@ -1,0 +1,55 @@
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .layout-web {
+        display: none;
+    }
+
+    .layout-movil {
+        width: 100%;
+        display: flex;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .link-web__only {
+        pointer-events: none;
+        color: gray;
+        border: 1px solid gray;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-title {
+        width: 30%;
+    }
+
+    .nav-ul {
+        width: 70%;
+    }
+
+    .home-footer {
+        span {
+            text-align: center;
+        }
+    }
+
+    .guide {
+        width: 90%;
+        margin: 20px 10px;
+
+        .card {
+            width: 100%;
+        }
+    }
+
+    .link {
+        width: 45%;
+        font-size: 0.8rem;
+    }
+}

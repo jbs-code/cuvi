@@ -1,0 +1,16 @@
+.view-container {
+    width: 100%;
+    display: flex;
+}
+
+
+.view {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.view-form {
+    width: 50%;
+}
