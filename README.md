@@ -1,3 +1,15 @@
+# Cuvi
+Aplicación desarrollada con React y TypeScript cuya función es crear un currículum.
+    
+## Run
+- La aplicación fue creada con create-react-app.
+  
+- Solo se necesita ejecutar *npm install* para instalar las dependencias.
+
+- Y ejecutar *npm start* para correr la aplicación.
+
+![portada](./src/assets/portada.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
