@@ -8,7 +8,11 @@ Aplicación desarrollada con React y TypeScript cuya función es crear un currí
 
 - Y ejecutar *npm start* para correr la aplicación.
 
+- Si quieres ver esta aplicación en producción la encontrarás [aquí](https://cuvi.jaimejb.com).
+
 ![portada](./src/assets/portada.png)
+
+
 
 # Getting Started with Create React App
 

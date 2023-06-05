@@ -69,7 +69,7 @@ export function TechSkills() {
             ref={inputRef}
             onChange={handleInputChange}
             className="input"
-            placeholder="Habilidades"
+            placeholder="Ej: Manejo de hojas de cálculo"
           ></input>
           <button className="btn btn-purple w-80" type="submit">
             Agregar

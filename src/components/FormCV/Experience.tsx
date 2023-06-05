@@ -122,7 +122,7 @@ export function Experience() {
               ref={descRef}
               onChange={handleInputChange}
               className="input-textarea--smaller"
-              placeholder="Ej: Mi trabajo consistía en hacer investigación sobre..."
+              placeholder="Ej: Investigué sobre las causas de (...) Esto sirvió para (...)"
               value={descripcion}
             ></textarea>
           </label>
