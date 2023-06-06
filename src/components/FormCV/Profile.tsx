@@ -6,6 +6,7 @@ import useForm from "../../hooks/useForm";
 import { CVContext } from "../../CVContext/CVContext";
 import { actionType } from "../../Types/cvReducerType";
 import { initialState } from "../../helpers/initialState";
+import { IPerfil } from "../../Types/ICv";
 
 export function Profile() {
   const { stateCV, handleTemplateChange } = useContext(CVContext);
@@ -14,6 +15,8 @@ export function Profile() {
   const navigate = useNavigate();
   const location = useLocation();
   const perfilRef = useRef<HTMLTextAreaElement>(null);
+
+  const { perfil } = data as IPerfil;
 
   useEffect(() => {
     perfilRef.current?.focus();
@@ -48,6 +51,7 @@ export function Profile() {
             onChange={handleInputChange}
             className="input-textarea"
             placeholder="Ej: Periodista egresado de la Univesidad de Metrópolis con una amplia experiencia en medios impresos y digitales. Mi trabajo ha sido reconocido por la prensa nacional y continuo preparándome con cursos relacionados a los medios de comunicación contemporáneos."
+            value={perfil}
           ></textarea>
 
           <button className="btn btn-purple w-80" type="submit">
@@ -61,7 +65,9 @@ export function Profile() {
           Anterior
         </Link>
         <Link
-          className={!thereIsPerfil ? "link link-disabled w-20" : "link link-green w-20"}
+          className={
+            !thereIsPerfil ? "link link-disabled w-20" : "link link-green w-20"
+          }
           to="/tech-skills"
         >
           Siguiente

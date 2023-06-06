@@ -41,8 +41,8 @@ export function View() {
         <div className="cv-container">
           <h1 className="nombre">{contacto.nombre}</h1>
           {contacto.nombre !== "" && contacto.email !== "" && (
-            <div className="seccion">
-              <h2 className="seccion-name">Contacto</h2>
+            <div className="seccion seccion-contacto">
+              <h2 className="seccion-name w-100">Contacto</h2>
               <div className="description">
                 {contacto.localidad && (
                   <div className="item">
@@ -50,32 +50,28 @@ export function View() {
                     <p className="contacto-item"> {contacto.localidad}</p>
                   </div>
                 )}
-
-                {contacto.email && (
-                  <div className="item">
-                    <span>Email:</span>
-                    <p className="contacto-item"> {contacto.email}</p>
-                  </div>
-                )}
-
-                {contacto.telefono && (
-                  <div className="item">
-                    <span>Teléfono:</span>
-                    <p className="contacto-item"> {contacto.telefono}</p>
-                  </div>
-                )}
-
                 {contacto.linkedIn && (
                   <div className="item">
                     <span>Linkedin:</span>
                     <p className="contacto-item"> {contacto.linkedIn}</p>
                   </div>
                 )}
-
+                {contacto.email && (
+                  <div className="item">
+                    <span>Email:</span>
+                    <p className="contacto-item"> {contacto.email}</p>
+                  </div>
+                )}
                 {contacto.webPersonal && (
                   <div className="item">
                     <span>Web personal:</span>
                     <p className="contacto-item"> {contacto.webPersonal}</p>
+                  </div>
+                )}
+                {contacto.telefono && (
+                  <div className="item">
+                    <span>Teléfono:</span>
+                    <p className="contacto-item"> {contacto.telefono}</p>
                   </div>
                 )}
               </div>

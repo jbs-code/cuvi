@@ -85,7 +85,7 @@ export function CreatePdf({ stateCV }: Props) {
 
     skills: {
       width: "25%",
-      marginBottom: "10px",
+      marginBottom: "7px",
       flexDirection: "row",
       paddingHorizontal: "10px",
     },
@@ -132,23 +132,36 @@ export function CreatePdf({ stateCV }: Props) {
           <Text style={styles.nombre}>{stateCV.contacto.nombre}</Text>
 
           {contacto.nombre !== "" && contacto.email !== "" && (
-            <View style={styles.section}>
-              <Text style={styles.titulo}>Contacto</Text>
+            <View
+              style={[
+                styles.section,
+                { flexDirection: "row", flexWrap: "wrap" },
+              ]}
+            >
+              <Text style={[styles.titulo, { width: "100%" }]}>Contacto</Text>
               {contacto.localidad && (
-                <Text style={styles.list}>Localidad: {contacto.localidad}</Text>
-              )}
-              {contacto.email && (
-                <Text style={styles.list}>Email: {contacto.email}</Text>
-              )}
-              {contacto.telefono && (
-                <Text style={styles.list}>Teléfono: {contacto.telefono}</Text>
+                <Text style={[styles.list, { width: "50%" , marginBottom: "2px"}]}>
+                  Localidad: {contacto.localidad}
+                </Text>
               )}
               {contacto.linkedIn && (
-                <Text style={styles.list}>LinkedIn: {contacto.linkedIn}</Text>
+                <Text style={[styles.list, { width: "50%", marginBottom: "2px" }]}>
+                  LinkedIn: {contacto.linkedIn}
+                </Text>
+              )}
+              {contacto.email && (
+                <Text style={[styles.list, { width: "50%", marginBottom: "2px" }]}>
+                  Email: {contacto.email}
+                </Text>
               )}
               {contacto.webPersonal && (
-                <Text style={styles.list}>
+                <Text style={[styles.list, { width: "50%", marginBottom: "2px"}]}>
                   Web Personal: {contacto.webPersonal}
+                </Text>
+              )}
+              {contacto.telefono && (
+                <Text style={[styles.list, { width: "50%", marginBottom: "2px" }]}>
+                  Teléfono: {contacto.telefono}
                 </Text>
               )}
             </View>
@@ -156,8 +169,7 @@ export function CreatePdf({ stateCV }: Props) {
 
           {perfil.perfil !== "" && (
             <View style={styles.section}>
-              <Text style={styles.titulo}></Text>
-              <Text style={styles.list}>{perfil.perfil}</Text>
+              <Text style={[styles.list, {marginTop: "10px"}]}>{perfil.perfil}</Text>
             </View>
           )}
 

@@ -6,6 +6,7 @@ import useForm from "../../hooks/useForm";
 import { CVContext } from "../../CVContext/CVContext";
 import { actionType } from "../../Types/cvReducerType";
 import { initialState } from "../../helpers/initialState";
+import { IContacto } from "../../Types/ICv";
 
 export function Contact() {
   const { stateCV, handleTemplateChange } = useContext(CVContext);
@@ -20,6 +21,9 @@ export function Contact() {
   const linkedInRef = useRef<HTMLInputElement>(null);
   const personalWebRef = useRef<HTMLInputElement>(null);
   const nextRef = useRef<HTMLAnchorElement>(null);
+
+  const { nombre, localidad, email, telefono, linkedIn, webPersonal } =
+    data as IContacto;
 
   useEffect(() => {
     const { contacto } = stateCV;
@@ -64,6 +68,7 @@ export function Contact() {
             className="input mt-1"
             placeholder="Nombre*"
             onKeyDown={(e) => handleKeyDown(e, locationRef)}
+            value={nombre}
           ></input>
           <input
             type="text"
@@ -73,6 +78,7 @@ export function Contact() {
             className="input mt-1"
             placeholder="Localidad"
             onKeyDown={(e) => handleKeyDown(e, emailRef)}
+            value={localidad}
           ></input>
           <input
             type="email"
@@ -82,6 +88,7 @@ export function Contact() {
             className="input mt-1"
             placeholder="Correo electrónico*"
             onKeyDown={(e) => handleKeyDown(e, phoneRef)}
+            value={email}
           ></input>
           <input
             type="tel"
@@ -91,6 +98,7 @@ export function Contact() {
             className="input mt-1"
             placeholder="Teléfono"
             onKeyDown={(e) => handleKeyDown(e, linkedInRef)}
+            value={telefono}
           ></input>
           <input
             type="text"
@@ -100,6 +108,7 @@ export function Contact() {
             className="input mt-1"
             placeholder="LinkenIn"
             onKeyDown={(e) => handleKeyDown(e, personalWebRef)}
+            value={linkedIn}
           ></input>
           <input
             type="text"
@@ -108,6 +117,7 @@ export function Contact() {
             onChange={handleInputChange}
             className="input mt-1"
             placeholder="Web Personal"
+            value={webPersonal}
           ></input>
           <i className="form-i">Los campos con * son obligatorios</i>
 
